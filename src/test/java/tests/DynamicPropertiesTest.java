@@ -18,4 +18,12 @@ public class DynamicPropertiesTest extends TestBase {
         dynamicProperties = new DynamicProperties(driver);
         dynamicProperties.waitButton();
     }
+
+    @Test
+    public void colorButton() {
+        dynamicProperties = new DynamicProperties(driver);
+        dynamicProperties.waitButton();
+        String color = dynamicProperties.getCss();
+        System.out.println(color);
+    }
 }

@@ -20,7 +20,17 @@ public class DynamicProperties {
     @FindBy(xpath = "//button[@id=\"visibleAfter\"]")
     private WebElement waitedButton;
 
+    @FindBy(xpath = "//button[@id=\"colorChange\"]")
+    private WebElement colorChangeButton;
+
+    //button[@id="colorChange"]
+
     public void waitButton() {
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOf(waitedButton));
     }
+
+    public String getCss() {
+        return colorChangeButton.getCssValue("color");
+    }
+
 }

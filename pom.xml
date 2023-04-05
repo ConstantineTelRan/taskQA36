@@ -45,8 +45,35 @@
             <version>1.4.4</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.marketsquare</groupId>
+            <artifactId>robotframework-seleniumlibrary</artifactId>
+            <version>4.0.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.robotframework</groupId>
+            <artifactId>robotframework</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
     </dependencies>
-
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.googlecode.robotframework-maven-plugin</groupId>
+                <artifactId>robotframework-maven-plugin</artifactId>
+                <version>1.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
