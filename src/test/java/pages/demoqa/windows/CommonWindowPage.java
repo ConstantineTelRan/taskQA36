@@ -1,6 +1,6 @@
 package pages.demoqa.windows;
 
-import jnr.ffi.Struct;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
